@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN protocols</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="mt-auto">
+
+  <!-- Header -->
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand list-inline-item" href="index.html">
+            <img src="/images/icon.png" width="70" height="60" alt="Начало">
+          </a>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Начало</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ресурси
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="http://www.iseca.org/downloads/2003_2004-1/papers/43369_VPN.pdf" target="_blank" >iseca.org</a>
+                <a class="dropdown-item" href="https://www.pcmag.com/encyclopedia/term/vpn" target="_blank" ><img src="../images/pcmag-icon.webp" width="30" height="30" alt=""> PCMag</a>
+                <a class="dropdown-item" href="https://www.cisco.com" target="_blank" > <img src="../images/cisco-icon.png" width="30" height="30" alt=""> Cisco   </a>
+                <a class="dropdown-item" href="https://www.paloaltonetworks.com/cyberpedia" target="_blank" > <img src="..//images/PANW-4618d203.png" width="40" height="30" alt=""> Cyberpedia </a>
+                
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand list-inline-item" style="font-size: 16px; font-weight: normal;" target="_blank" href="https://tu-sofia.bg"> ТУ-София </a>
+        <a class="navbar-brand list-inline-item" target="_blank" href="https://tu-sofia.bg">
+                <img src="/images/TU_logo.png" width="50" alt="">
+              </a>
+              </div>
+      </nav>
+      </header>
+
+
+
+      <!-- Main page-->
+      <main class="my-5">
+     
+        <div class="container">
+          <div class="row">
+            <div class="col" style="text-align: center;">
+              <a class="link-warning" href="https://www.cloudflare.com/learning/network-layer/what-is-tunneling/" target="_blank" ><h5> VPN ПРОТОКОЛИ</h5> </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row my-5">
+            <div class="col-md-4">
+              <p class="fw-bold" style="text-align: center;"> IP in IP </p>
+              <p class="fw-light" style="text-align: justify;"><span class="fw-bolder">IP е IP </span>тунелен протокол, който капсулира един IP пакет в друг IP пакет.
+                 За да капсулирате IP пакет в друг IP пакет, се добавя външна заглавка с IP на източника, входната точка на тунела, и IP на местоназначението, изходната точка на тунела.
+                  Докато правите това, вътрешният пакет е непроменен (с изключение на полето TTL, което се намалява).
+                   Ако размерът на пакета, включително външния хедър, е по-голям от MTU (Maximum transmission unit) на пътя, капсулаторът фрагментира пакета. Декапсулаторът ще сглоби отново пакета.</p>
+            </div>
+            <div class="col-md-4">
+              <p class="fw-bold" style="text-align: center;">SSH - Secure Shell tunneling </p>
+              <p class="fw-light" style="text-align: justify;">
+                <span class="fw-bolder"> Тунелът Secure Shell (SSH)</span> се състои от криптиран тунел, създаден чрез връзка на SSH протокол. 
+                Потребителите могат да настроят SSH тунели за прехвърляне на некриптиран трафик през мрежа през криптиран канал. 
+                Това е софтуерно базиран подход към сигурността на мрежата и резултатът е<span class="fw-bolder">  прозрачно криптиране</span>. To e SSH функция, която ви позволява да криптирате целия си трафик през SSH връзка, без да се налага ръчно да го активирате. 
+                Това означава, че всички ваши данни, включително вашите команди, изходи и прехвърляне на файлове, ще бъдат шифровани по подразбиране.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p class="fw-bold" style="text-align: center;">OpenVPN</p>
+              <p class="fw-light" style="text-align: justify;"><span class="fw-bolder">OpenVPN</span> е система за VPN, която прилага техники за създаване на сигурни връзки от точка до точка
+                 или от site-to-site в маршрутизирани или мостови конфигурации и съоръжения за отдалечен достъп. Той изпълнява както клиентски, така и сървърни приложения.
+                OpenVPN позволява на партньорите да се удостоверяват един друг с помощта на предварително споделени секретни ключове, сертификати или потребителско име/парола.
+                Той широко използва библиотеката за криптиране OpenSSL, както и протокола TLS. Той е способен да преминава през network address translators  (NAT) 
+                 и защитни стени.</p>
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <img class="pictures" src="../images/Tunnel.jpg" width="100%" >
+            </div>
+            <div class="col-md-2">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="row my-5">
+            <div class="col-md-4">
+              <p class="fw-bold" style="text-align: center;"> L2TP - Layer 2 Tunneling Protocol </p>
+              <p class="fw-light" style="text-align: justify;">
+                В компютърните мрежи <span class="fw-bolder">Layer 2 Tunneling Protocol (L2TP)</span> е протокол за тунелиране, използван за поддръжка на VPN
+                 или като част от доставката на услуги от ISP. Той използва криптиране („скриване“) само за своите собствени контролни съобщения (използвайки опционална предварително
+                  споделена тайна) и не предоставя никакво криптиране или поверителност на съдържанието само по себе си.
+                   Поради липсата на поверителност, присъща на L2TP протокола, той често се прилага заедно с IPsec(Internet Protocol Security).
+               </div>
+            <div class="col-md-4">
+              <p class="fw-bold" style="text-align: center;">SSTP - Secure Socket Tunneling Protocol</p>
+              <p class="fw-light" style="text-align: justify;"><span class="fw-bolder">Secure Socket Tunneling Protocol (SSTP)</span> е форма на тунел за в VPN, който осигурява механизъм
+                 за транспортиране на PPP (Point-to-Point Protocol) трафик през SSL/TLS (Secure Sockets Layer)/(Transport Layer Security) канал.
+                 Използван най-често на порт 443 позволява на SSTP да преминава през почти всички защитни стени и 
+                 прокси сървъри, с изключение на аутентикирани уеб проксита.
+
+                SSTP сървърите трябва да бъдат аутентикиран по време на SSL/TLS фазата. SSTP клиентите могат по избор да бъдат аутентикирани по време на SSL/TLS фазата и 
+                трябва да бъдат аутентикирани във фазата на PPP. Използването на PPP позволява поддръжка на общи методи за аутентикация.</p>
+            </div>
+            <div class="col-md-4">
+              <p class="fw-bold" style="text-align: center;"> GRE - Generic Routing Encapsulation</p>
+              <p class="fw-light" style="text-align: justify;">
+                Generic Routing Encapsulation (GRE) капсулира пакети с данни, които използват един протокол за маршрутизиране в пакетите на друг протокол. 
+                GRE е един от начините за създаване на директна връзка от точка до точка в мрежа с цел опростяване на връзките между отделни мрежи.
+                <br>
+                GRE добавя два хедър към всеки пакет: GRE хедър и хедър на IP. GRE хедърът показва типа протокол, използван от капсулирания пакет. 
+                IP хедърът капсулира IP хедъра и полезния товар на оригиналния пакет. Само рутерите във всеки край на GRE тунела ще препращат към оригиналния, не-GRE IP хедър.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="fw-semibold" style="text-align: center;"> Мислете за виртуалните тунели като между слоевете на OSI модела на две устройства и ще разберете, че за всеки един от тях
+              може да бъде създаден протокол за тунелиране като всеки има своите предимства.  Това е само една малка част от всички възможни тунелни протоколи. </p>
+            </div>
+          </div>
+        </div>
+
+        </main>
+
+       
+      <div class="mt-auto">
+        <footer class="bg-dark mt-auto">
+          <div class="container-fluid py-2 text-center">
+            <span class="text-white">&copy Tsvetomir Stoilov, Computer networks project</span>
+          </div>
+        </footer>
+        </div>
+        <script src="../bootstrap.bundle.js"></script>
+</body>
+</html>
