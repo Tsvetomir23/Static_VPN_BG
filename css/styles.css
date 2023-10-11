@@ -1,0 +1,36 @@
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+.jumbotron {
+  background-color: rgb(255, 240, 101);
+}
+
+
+.custom-button{
+  background-color: rgb(255, 240, 101);
+  outline-color: rgb(255, 240, 101);
+}
+
+.custom-button:hover{
+  background-color: rgb(251, 242, 163);;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.card .img-fit{
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+@media (max-width: 767.98px){
+  .card .img-fit {
+    aspect-ratio: 1.45/1;
+  }
+}

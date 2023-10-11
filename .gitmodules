@@ -1,0 +1,6 @@
+[submodule "bootstrap-submodule"]
+	path = bootstrap-submodule
+	url = https://github.com/entangled/bootstrap-submodule.git
+[submodule "bootstrap"]
+	path = bootstrap
+	url = https://github.com/twbs/bootstrap.git
